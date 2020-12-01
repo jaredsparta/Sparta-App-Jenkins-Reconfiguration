@@ -31,3 +31,12 @@ cd /home/ubuntu/app
 rm -r node_modules
 npm install
 npm start &
+
+# this moves the configuration file to the necessary place
+sudo cp /home/config-files/reverse-proxy.conf /etc/nginx/conf.d/app.conf
+
+# this removes the default sites to ensure that nginx looks to our config file
+sudo rm /etc/nginx/sites-enabled/default
+
+# restart the server to allow the config files to change
+sudo systemctl restart nginx

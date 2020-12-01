@@ -35,3 +35,6 @@
 2. In your terminal, navigate to the newly-made directory of this project
 3. Type `vagrant up`
 4. The app can now be seen in your web browser at the web address `development.local:3000` or `192.168.10.100:3000`
+
+5. To build our CI pipeline, go into Jenkins and create a `New Item`
+6. 

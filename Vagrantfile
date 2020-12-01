@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
     app.vm.network "private_network", ip: "192.168.10.100"
     app.hostsupdater.aliases = ["development.local"]
     app.vm.synced_folder "app", "/home/ubuntu/app"
+    app.vm.synced_folder "config-files", "/home/config-files"
     app.vm.provision "shell", path: "environment/app/provision.sh", privileged: false
   end
 
