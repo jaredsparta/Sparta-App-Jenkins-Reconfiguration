@@ -1,6 +1,8 @@
-# Sparta NodeJS App, DevEnv, CI
+# Sparta CI/CD for sample app
 
 - This repo will be a development environment that you can copy and setup by running `vagrant up`
+
+
 
 <br>
 
@@ -31,10 +33,21 @@
 
 # Instructions & Step-by-step
 
+**Running the app and local tests**
+
 1. You will need to first clone this repository into your own machine
 2. In your terminal, navigate to the newly-made directory of this project
 3. Type `vagrant up`
-4. The app can now be seen in your web browser at the web address `development.local:3000` or `192.168.10.100:3000`
+4. The app can now be seen in your web browser at the web address `development.local` or `192.168.10.100`
+5. To run the tests, go into terminal and navigate to `/tests`
+> If you do not have the necessary gems installed, run `bundle install` (otherwise you will not be able to run the tests)
+6. Run `rake spec` to view whether the tests pass or not
+> You can specify `rake spec:app` or `rake spec:db` to test the app and the database respectively on their own
+7. After checking out everything, ensure you have a copy of this repository on GitHub 
 
-5. To build our CI pipeline, go into Jenkins and create a `New Item`
-6. 
+<br>
+
+**First Job on Jenkins**
+
+1. To build our CI pipeline, go into Jenkins and click `New Item`
+2. Give the job a name and select `Freestyle project`
