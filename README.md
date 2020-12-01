@@ -24,6 +24,11 @@
 
 <br>
 
+- If you do not have `serverspec` and/or `rake` installed for Ruby, you will need it
+> Navigate to `/tests` directory where a file called `Gemfile` should be and type in `bundle install`
+
+<br>
+
 # Instructions & Step-by-step
 
 1. You will need to first clone this repository into your own machine
