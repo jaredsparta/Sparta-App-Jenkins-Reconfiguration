@@ -51,3 +51,19 @@
 
 1. To build our CI pipeline, go into Jenkins and click `New Item`
 2. Give the job a name and select `Freestyle project`
+
+3. GENERAL
+    - Give the name a logical description -- maybe what it will test etc.
+    - Tick `Discard old builds` and set the `Max # of builds to keep` to 2 -- this will help the Jenkins server with capacity
+    - Tick `GitHub project` and input the URL of the repository you have saved this on
+
+4. Office 365 Connector
+    - Add a notification webhook by going into the channel you want in Microsoft Teams
+    - In the top right hand corner you will be able to click the three dots and select `Connectors`
+    - Create a new webhook and name and it will give you a URL to paste
+    - Paste the URL from Teams into the box in Jenkins labelled `URL` and give it a name
+    - In the `Advanced` settings, specify which events you want notifications on
+
+5. Source Code Management
+    - Select the `Git` option
+    - In 
