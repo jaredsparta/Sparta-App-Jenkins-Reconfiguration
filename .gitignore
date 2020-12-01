@@ -1,4 +1,6 @@
 .vagrant
+.vscode
 *.log
 */*.log
+*/*/*.log
 app/node_modules
