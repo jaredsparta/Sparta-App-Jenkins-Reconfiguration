@@ -15,7 +15,7 @@
 
 > Run `vagrant plugin uninstall vagrant-hostsupdater` to uninstall it
 
-> There may be be some problems with this plugin, if you do encounter some just uninstall and then re-install
+<br>
 
 - One will also need `Ruby` installed, find it [here](https://www.ruby-lang.org/en/downloads/).
 

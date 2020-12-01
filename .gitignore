@@ -4,3 +4,4 @@
 */*.log
 */*/*.log
 app/node_modules
+app/package-lock.json
