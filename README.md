@@ -2,6 +2,7 @@
 
 - This repo will be a development environment that you can copy and setup by running `vagrant up`
 
+- It will also detail how to get a CI pipeline working to automate the testing, merging and pushing of code from a development branch to master/main
 
 
 <br>
