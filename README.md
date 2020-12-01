@@ -77,7 +77,7 @@
 5. Source Code Management
     - Select the `Git` option
     - In the `Repository URL` input the URL found when you go to your GitHub repository, click on `Code` (found next to `Add file`) and copy the SSH URL
-    - Copy the instructions found in [SSH-KEYS-AND-WEBHOOKS](https://github.com/jaredsparta/Sparta-App-Jenkins-Reconfiguration/blob/master/SSH-KEYS.md)
+    - Copy the instructions found in [SSH-KEYS-AND-WEBHOOKS](https://github.com/jaredsparta/Sparta-App-Jenkins-Reconfiguration/blob/master/SSH-KEYS-AND-WEBHOOKS.md)
     - Specify the branch of your repo to build
 
 6. Build Triggers
