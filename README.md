@@ -34,7 +34,7 @@
 
 # Instructions & Step-by-step
 
-**Running the app and local tests**
+ ## Running the app and local tests
 
 1. You will need to first clone this repository into your own machine
 2. In your terminal, navigate to the newly-made directory of this project
@@ -58,9 +58,12 @@
 
 <br>
 
-**First Job on Jenkins**
+## First Job on Jenkins
+We want to be able to automatically test and build new code that has been pushed through from development branches, we can do this through creating jobs in Jenkins.
+
 
 1. To build our CI pipeline, go into Jenkins and click `New Item`
+
 2. Give the job a name and select `Freestyle project`
 
 3. General
@@ -101,7 +104,8 @@
 
 <br>
 
-**Second Job on Jenkins**
+## Second Job on Jenkins
+
 Now that we have tested the code, we can now add another step to make Jenkins automatically merge the branch from before into master/main and push master/main to GitHub
 
 1. We will proceed to create another job so navigate to the Dashboard in Jenkins and click `New Item`
@@ -136,4 +140,4 @@ Now that we have tested the code, we can now add another step to make Jenkins au
     - From the drop-down of `Add post-build action` select `Git publisher`
     - Tick `Merge Results`
 
-8. Finally save these options
+8. Finally save these options and test this new job by pushing code from the development branch
