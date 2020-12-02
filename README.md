@@ -34,12 +34,17 @@
 
 # Instructions & Step-by-step
 
+The following section aims to walk you through how to correctly set up the app onto port 80 and how to create pipelines in Jenkins that will automate the building and testing of new changes.
+
+
  ## Running the app and local tests
 
 1. You will need to first clone this repository into your own machine
 2. In your terminal, navigate to the newly-made directory of this project
 3. Type `vagrant up`
 4. The app can now be seen in your web browser at the web address `development.local` or `192.168.10.100`
+    - Check out `development.local/posts`
+    - Check out `development.local/fibonacci/15` or indeed any positive integer other than 15
 5. To run the tests, go into terminal and navigate to `/tests`
 > If you do not have the necessary gems installed, run `bundle install` (otherwise you will not be able to run the tests)
 6. Run `rake spec` to view whether the tests pass or not
