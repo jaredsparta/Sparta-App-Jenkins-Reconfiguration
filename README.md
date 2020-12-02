@@ -146,3 +146,17 @@ Now that we have tested the code, we can now add another step to make Jenkins au
     - Tick `Merge Results`
 
 8. Finally save these options and test this new job by pushing code from the development branch
+
+## Testing out the pipeline
+
+1. First we push some changes from our `dev-branch` to origin
+
+![](images/3.png)
+
+2. Then we see that Jenkins will test the build and if it was successful it will merge and push it
+
+![](images/2.png)
+
+3. Finally we can look at our GitHub repository to check if the merge was successful. As you can see, Jenkins has automatically merged the changes from `dev-branch` into `master` and then pushed it to our GitHub repo.
+
+![](images/1.png)
